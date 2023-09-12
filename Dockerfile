@@ -8,4 +8,5 @@ WORKDIR /app
 
 RUN wget https://gist.githubusercontent.com/mcmonkey4eva/b63c786871e2b75cdf2622a2052620aa/raw/76be3fded8ff9b242509a50326ae4c723fd781c6/SDXL%2520Official%2520Presets.json
 RUN git clone https://github.com/Stability-AI/StableSwarmUI
+
 CMD ["./StableSwarmUI/launch-linux.sh"]

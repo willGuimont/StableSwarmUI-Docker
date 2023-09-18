@@ -9,6 +9,7 @@ git clone https://github.com/Fannovel16/comfyui_controlnet_aux
 git clone https://github.com/Stability-AI/stability-ComfyUI-nodes
 git clone https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes
 git clone https://github.com/EllangoK/ComfyUI-post-processing-nodes
+git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git
 
 pip install -r ComfyUI-Manager/requirements.txt
 pip install -r comfyui_controlnet_aux/requirements.txt

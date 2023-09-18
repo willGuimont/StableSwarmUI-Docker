@@ -47,7 +47,6 @@ loading them.
 
 ### Installing plugins
 
-**TODO:** Make a helper script to streamline
 **TODO:** Copy most files to a volume to not reinstall each time?
 
 Necessary to run [ControlNet](https://huggingface.co/stabilityai/control-lora).

@@ -20,8 +20,9 @@ docker exec -it <container-id> bash
 mkdir /app/output/Models
 cp -r /app/StableSwarmUI/Models/* /app/output/Models
 
-# Then move them back when restarting the container
-cp -r /app/output/Models/* /app/StableSwarmUI/Models
+# Then make models available with a symlink
+rm -rf /app/StableSwarmUI/Models
+ln -s /app/output/Models /app/StableSwarmUI/Models
 ```
 
 ## Additional notes

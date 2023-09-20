@@ -17,5 +17,6 @@ pip install -r comfyui_controlnet_aux/requirements.txt
 pip install -r stability-ComfyUI-nodes/requirements.txt
 pip install -r efficiency-nodes-comfyui/requirements.txt
 
-# Copy models
-cp -r /app/output/Models/* /app/StableSwarmUI/Models
+# Make models available
+rm -rf /app/StableSwarmUI/Models
+ln -s /app/output/Models /app/StableSwarmUI/Models

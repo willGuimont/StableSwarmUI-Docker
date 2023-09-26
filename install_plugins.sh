@@ -1,6 +1,7 @@
 # Go into the venv
-cd /app/StableSwarmUI/dlbackend/ComfyUI
+cd /app/StableSwarmUI/dlbackend/ComfyUI || exit 1
 source venv/bin/activate
+pip install torch torchvision torchaudio xformers
 
 # Install plugins
 cd custom_nodes/

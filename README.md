@@ -48,8 +48,6 @@ loading them.
 
 ### Installing plugins
 
-**TODO:** Copy most files to a volume to not reinstall each time?
-
 Necessary to run [ControlNet](https://huggingface.co/stabilityai/control-lora).
 
 ```bash

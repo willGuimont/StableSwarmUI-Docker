@@ -10,12 +10,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Install dependencies
 ENV MAKEFLAGS="-j$(nproc)"
-RUN apt update && apt install -y git wget dotnet-sdk-7.0 python3 python3-venv python3-pip apt-transport-https
+RUN apt update && apt install -y git wget dotnet-sdk-8.0 python3 python3-venv python3-pip apt-transport-https
 RUN apt update && apt install -y libgl1-mesa-glx python3-opencv libpng-dev libjpeg-dev libopenexr-dev libtiff-dev libwebp-dev
-# Install dotnet 8.0
-#RUN wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
-#RUN chmod +x ./dotnet-install.sh
-#RUN ./dotnet-install.sh --version latest
 
 # Getting StableSwarmUI
 WORKDIR /app

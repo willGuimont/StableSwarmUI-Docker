@@ -55,11 +55,16 @@ Necessary to run [ControlNet](https://huggingface.co/stabilityai/control-lora).
 docker-compose run --build app bash
 
 # Install then quit
-/app/StableSwarmUI/launch-linux.sh
+/app/SwarmUI/launch-linux.sh
+
+# Open and install at http://localhost:7801
+# Close the server with Ctrl+C
 
 # Install plugins
 /app/install_plugins.sh
 
+# Open and install at http://localhost:7801
+
 # Start again
-/app/StableSwarmUI/launch-linux.sh
+/app/SwarmUI/launch-linux.sh
 ```

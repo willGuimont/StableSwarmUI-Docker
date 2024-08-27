@@ -1,5 +1,5 @@
 # Go into the venv
-cd /app/StableSwarmUI/dlbackend/ComfyUI || exit 1
+cd /app/SwarmUI/dlbackend/ComfyUI || exit 1
 source venv/bin/activate
 pip install torch torchvision torchaudio xformers
 
@@ -19,5 +19,5 @@ pip install -r stability-ComfyUI-nodes/requirements.txt
 pip install -r efficiency-nodes-comfyui/requirements.txt
 
 # Make models available
-rm -rf /app/StableSwarmUI/Models
-ln -s /app/output/Models /app/StableSwarmUI/Models
+rm -rf /app/SwarmUI/Models
+ln -s /app/output/Models /app/SwarmUI/Models

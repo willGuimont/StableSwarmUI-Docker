@@ -15,8 +15,8 @@ RUN apt update && apt install -y libgl1-mesa-glx python3-opencv libpng-dev libjp
 
 # Getting StableSwarmUI
 WORKDIR /app
-RUN git clone https://github.com/Stability-AI/StableSwarmUI
+RUN git clone https://github.com/mcmonkeyprojects/SwarmUI/
 COPY ./install_plugins.sh /app/
 
 # Launch the web installer
-CMD ["./StableSwarmUI/launch-linux.sh"]
+CMD ["./SwarmUI/launch-linux.sh"]
